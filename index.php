@@ -4,7 +4,8 @@
 <!--<![endif]-->
 
 <!-- BEGIN HEAD -->
-<?php $pag = "dashboard"?>
+<?php $pag = "dashboard" ?>
+
 <head>
 	<meta charset="utf-8" />
 	<title>Multidados TI</title>
@@ -189,7 +190,7 @@
 	</div>
 	<!-- END CONTAINER -->
 	<!-- BEGIN FOOTER -->
-	<?php include_once "rodape.php"?>
+	<?php include_once "rodape.php" ?>
 	<!-- END FOOTER -->
 	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 	<script src="assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
@@ -212,23 +213,21 @@
 			App.init(); // initlayout and core plugins
 			Index.init();
 		});
-
-	
 	</script>
 
 
-<script>
-	jQuery(document).ready(function() {
-			if($('#dashboard').text() == 'Dashboard'){
+	<script>
+		jQuery(document).ready(function() {
+			if ($('#dashboard').text() == 'Dashboard') {
 				console.log($('#dashboard').text());
 				$('#ativar-dashboard').addClass('start active ')
-			}else if($('#cadastro').text() == 'Cadastro'){
+			} else if ($('#cadastro').text() == 'Cadastro') {
 				console.log($('#dashboard').text());
-			}else{
+			} else {
 				console.log($('#relatorio').text());
 			}
 		});
-</script>
+	</script>
 
 	<!-- END JAVASCRIPTS -->
 </body>

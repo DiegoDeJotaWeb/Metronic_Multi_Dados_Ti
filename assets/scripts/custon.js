@@ -48,11 +48,11 @@ $("#btn-fornecedor").click((e) => {
         method: "POST",
         data: {},
         dataType: "json"
-    }).done(function(result) {
+    }).done(function (result) {
         //Cria e Imprime titulos da tabela 
         $("#tabela").html("<thead><tr><th>#</th><th>Nome</th><th>CPF</th><th>Cidade</th><th>E-mail</th></thead>");
 
-        $.each(result, function(i, value) {
+        $.each(result, function (i, value) {
             //Cria e Imprime dados da tabela 
             $("#tabela").append("<tr><td>" + i + "</td><td>" + value.nome + "</td><td>" + value.cpf + "</td><td>" + value.cidade + "</td><td>" + value.email + "</td></tr></tbody>");
         });
@@ -71,11 +71,11 @@ $("#btn-usuario").click((e) => {
         method: "POST",
         data: {},
         dataType: "json"
-    }).done(function(result) {
+    }).done(function (result) {
         //Cria e Imprime titulos da tabela 
         $("#tabela").html("<thead><tr><th>#</th><th>Nome</th><th>CPF</th><th>Endereço</th><th>Telefone</th><th>Usuário</th></thead>");
 
-        $.each(result, function(i, value) {
+        $.each(result, function (i, value) {
             //Cria e Imprime dados da tabela 
             $("#tabela").append("<tr><td>" + i + "</td><td>" + value.nome + "</td><td>" + value.cpf + "</td><td>" + value.endereco + "</td><td>" + value.telefone + "</td><td>" + value.usuario + "</td></tr></tbody>");
         });

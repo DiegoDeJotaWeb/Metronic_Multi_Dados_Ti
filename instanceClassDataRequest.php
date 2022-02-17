@@ -11,5 +11,3 @@ $amountUsuarios = $instanceDadosUsuarios->dadosUsuarios("c");
 
 $instanceDadosFornecedores = new DataRequest();
 $amountFornecedores = $instanceDadosFornecedores->dadosFornecedores("c");
-
-?>

@@ -5,12 +5,6 @@ include_once "dadosMenu.php";
 	<div class="page-sidebar navbar-collapse collapse">
 		<!-- BEGIN SIDEBAR MENU -->
 		<ul class="page-sidebar-menu">
-
-
-
-
-
-
 			<li class="sidebar-toggler-wrapper">
 				<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
 				<div class="sidebar-toggler hidden-phone">
@@ -30,16 +24,7 @@ include_once "dadosMenu.php";
 				</form>
 				<!-- END RESPONSIVE QUICK SEARCH FORM -->
 			</li>
-			<!-- <li class="start active ">
-					<a href="index.html">
-					<i class="fa fa-home"></i>
-					<span class="title">
-						Dashboard
-					</span>
-					<span class="selected">
-					</span>
-					</a>
-				</li> -->
+
 			<?php
 			function echoList($array)
 			{
@@ -47,7 +32,7 @@ include_once "dadosMenu.php";
 
 					if (isset($item['apName'])) {
 						echo '<li class="" id="ativar-' . $item['apName'] . '"><a href="javascript:;"><span class="selected"></span>';
-					}else{
+					} else {
 						echo '<li class="" id=""><a href="javascript:;"><span class="selected"></span>';
 					}
 
