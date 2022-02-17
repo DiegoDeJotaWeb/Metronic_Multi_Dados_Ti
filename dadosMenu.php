@@ -5,7 +5,7 @@ $menu = [
     1 => [
         'name' => 'Dashboard',
         'apName' => 'dashboard',
-        'link' => 'javascript:;',
+        'link' => 'index.php',
         'id_parent' => 0,
         'iconMenu' => 'fa fa-home',
         // 'menuActiveDashboard' => 'start active'
@@ -14,7 +14,6 @@ $menu = [
     2 => [
         'name' => 'Cadastro',
         'apName' => 'cadastro',
-        'link' => 'javascript:;',
         'id_parent' => 0,
         'iconMenu' => 'fa fa-file-text',
         'iconSetaArrow' => 'arrow',
@@ -23,33 +22,32 @@ $menu = [
     ],
     3 => [
         'name' => 'Cliente',
-        'link' => 'https://...',
+        'link' => 'cadastroCliente.php',         
         'id_parent' => 2
     ],
     4 => [
         'name' => 'Fornecedor',
-        'link' => 'https://...',
+        'link' => 'cadastroFornecedor.php',
         'id_parent' => 2
     ],
     5 => [
         'name' => 'Perfil de acesso',
-        'link' => 'https://...',
+        'link' => 'cadastroPerfilDeAcesso.php',
         'id_parent' => 2
     ],
     6 => [
         'name' => 'Produtos',
-        'link' => 'https://...',
+        'link' => 'cadastroProduto.php',
         'id_parent' => 2
     ],
     7 => [
         'name' => 'Usuário',
-        'link' => 'https://...',
+        'link' => 'cadastroUsuario.php',
         'id_parent' => 2
     ],
     8 => [
         'name' => 'Relatório',
         'apName' => 'relatorio',
-        'link' => 'javascript:;',
         'id_parent' => 0,
         'iconMenu' => 'fa fa-bar-chart-o',
         'iconSetaArrow' => 'arrow',
@@ -58,17 +56,17 @@ $menu = [
     ],
     9 => [
         'name' => 'Cliente',
-        'link' => 'https://...',
+        'link' => 'relatorioCliente.php',
         'id_parent' => 8
     ],
     10 => [
         'name' => 'Faturamento',
-        'link' => 'https://...',
+        'link' => 'relatorioFaturamento.php',
         'id_parent' => 8
     ],
     11 => [
         'name' => 'Produto',
-        'link' => 'https://...',
+        'link' => 'relatorioProduto.php',
         'id_parent' => 8
     ]
 

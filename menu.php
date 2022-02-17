@@ -33,7 +33,7 @@ include_once "dadosMenu.php";
 					if (isset($item['apName'])) {
 						echo '<li class="" id="ativar-' . $item['apName'] . '"><a href="javascript:;"><span class="selected"></span>';
 					} else {
-						echo '<li class="" id=""><a href="javascript:;"><span class="selected"></span>';
+						echo '<li class="" id=""><a href="' . $item['link'] . '"><span class="selected"></span>';
 					}
 
 					if (isset($item['iconMenu'])) {
